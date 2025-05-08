@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* this is for header-container */
+
+#header-container {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+
+/* this is for blog-title */
+
+#blog-title {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* this is for welcome-message */
+
+#welcome-message{
+    color: white;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+/* this is for nav-container */
+
+#nav-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* this is for nav-link */
+
+.nav-link{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+/* this is for hovering the nav-link */
+
+.nav-link:hover {
+    color: purple;
+}
+
+/* this is for section */
+section {
+    width: 100%;
+    background-color: rgb(141, 132, 132);
+    margin: 5px;
+    padding: 20px;
+}
+
+/* this is for destination-section */
+
+.destination-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* this is for destination-card */
+
+.destination-card{
+    padding: 15px;
+    background-color: white;
+    flex: 1 1 calc(33% - 20px);
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+/* this is for destination-title */
+
+.destination-title{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* this is for class fty */
+
+.fty{
+    color: rgb(137, 123, 123);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* this is for destination-header */
+.destination-header{
+    margin-top: 5px;
+    height: auto;
+    width: 100%;
+}
+
+/* this is for destination-description */
+
+#destination-description{
+    margin-top: 5px;
+    height: auto;
+    width: 100%;
+}
+
+/* this is for class destination-description */
+
+.destination-description {
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(137, 123, 123);
+}
+
+
+/* this is for class destination-list */
+
+.destination-list{
+    margin-top: 5px;
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* this is for id destination-image */
+
+#dumna{
+    margin-left: 5px;
+}
+
+/* this is for class destination-image */
+
+.destination-image{
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+/* this is for id destination-list */
+
+#destination-list{
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(137, 123, 123);
+}
+
+/* this is for class v */
+
+.v{
+    margin-top: 5px;
+    margin-left: 5px;
+    height: auto;
+    width: 100%;
+}
+
+/* this is for id about and id contact */
+#about, #contact{
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(137, 123, 123);
+}
+
+/* this is for id about-content */
+
+#about-content{
+    padding: 15px;
+    background-color: white;
+}
+
+/* this is for id about-container */
+#about-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* this is for form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* this is for class contact-input and textarea */
+.contact-input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* this is for button */
+
+button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* this is for class social-link */
+
+.social-link{
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+    font-family:cursive;
+}
+
+/* this is for footer-text */
+
+#footer-text{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-family: fantasy;
+}
+
+/* responasive for size width: 1200px */
+
+@media (max-width: 1200px) {
+    .destination-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-card {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* responsive for size width: 768px */
+
+@media (max-width: 768px) {
+    #blog-title {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    #gt {
+        font-size: 0.9rem;
+    }
+
+    .welcome-message {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-card {
+        flex: 1 1 100%;
+    }
+
+    #nav-container {
+        flex-direction: column;
+    }
+
+    #destination-description, #destination-list {
+        font-size: 0.9rem;
+    }
+
+    .Name, textarea {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    #contact {
+        padding: 10px;
+    }
+
+    .social-link {
+        font-size: 0.9rem;
+    }
+
+    .v {
+        width: 100%;
+    }
+}
+
+/* responsive for size width: 480px */
+@media (max-width: 480px) {
+    #blog-title {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+
+    #gt {
+        font-size: 0.8rem;
+    }
+
+    .welcome-message {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-card {
+        flex: 1 1 100%;
+    }
+
+    .Name, textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    #contact {
+        padding: 5px;
+    }
+
+    .social-link {
+        font-size: 0.8rem;
+    }
+}
+
+/* this is for class video-player */
+
+.video-player {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+}
